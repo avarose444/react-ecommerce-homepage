@@ -1,6 +1,3 @@
-# react-ecommerce-homepage
-A React implementation of the Greenthread e-commerce homepage, featuring a dynamic product grid built from JSON data, reusable components (Header, Footer, ProductListing, ProductItem), and responsive styling
-
 # Greenthread E-Commerce Homepage (React)
 
 This project is a React implementation of the **Greenthread** e-commerce homepage, completed as **Part 1** of *COMS W4170: User Interface Design (Fall 2025)*.  
