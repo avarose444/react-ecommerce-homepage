@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+# Greenthread E-Commerce Homepage (React)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a React implementation of the **Greenthread** e-commerce homepage, completed as **Part 1** of *COMS W4170: User Interface Design (Fall 2025)*.  
+The goal of this phase is to migrate a fully static HTML/CSS shopping homepage into a modern React application using reusable components, JSX, and data-driven rendering.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🌿 Overview
 
-### `npm start`
+The homepage displays a responsive product grid built from a JSON data source.  
+All UI sections—including the header, footer, and each product item—are implemented as React components.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This project emphasizes:
+- Component-based design  
+- Prop-driven rendering  
+- Migrating static HTML/CSS to React  
+- Dynamic image importing with `require()`  
+- Structuring a foundational frontend codebase for later routing & cart functionality
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🚀 Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### **✔️ Header Component**
+- Navigation bar  
+- Logo  
+- Icons (including cart icon using Boxicons)  
+- Converted from static HTML to React with JSX-compliant syntax  
 
-### `npm run build`
+### **✔️ ProductListing Component**
+- Renders the entire product grid  
+- Dynamically generates items using `map()`  
+- Receives product data via props  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### **✔️ ProductItem Component**
+- Represents a single product card  
+- Displays name, category, price, and image  
+- Uses props for reusable rendering  
+- Images loaded with `require()` to work in React  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### **✔️ Footer Component**
+- Fully migrated from HTML/CSS  
+- Includes informational and social links  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### **✔️ JSON-Driven Data**
+- Product details (name, category, price, images) are loaded from `products.json`  
+- Passed through the component hierarchy for rendering  
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🎨 Why This Project Matters
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This build demonstrates both **front-end development skills** and **product design sensibility**.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### **Front-End Skills**
+- React component architecture  
+- JSX and modular UI structure  
+- Dynamic rendering from structured data  
+- Asset management in React  
+- Clean, maintainable code patterns  
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### **Product Design / UI Thinking**
+- Converting static layouts into reusable design components  
+- Information hierarchy (navigation → product grid → footer)  
+- Consistent spacing, patterns, and visual rhythm  
+- Foundation for multi-page user flows  
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📁 Project Structure
+src/
+│── App.js
+│── App.css
+│── products.json
+│── images/
+│── Header.js
+│── ProductListing.js
+│── ProductItem.js
+└── Footer.js
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🔜 Roadmap (Future Enhancements)
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Product Detail pages (`/product/:id`)  
+- React Router navigation  
+- Shopping cart with state management  
+- Global context store  
+- Microinteractions and animations  
+- Mobile-first refinement  
+>>>>>>> 068d702aa37223519c641c4c4cff61e2f33bd759
