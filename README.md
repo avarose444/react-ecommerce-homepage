@@ -25,27 +25,64 @@ This project emphasizes:
 - Navigation bar  
 - Logo  
 - Icons (including cart icon using Boxicons)  
-- Converted from static HTML to React with JSX-compliant syntax
+- Converted from static HTML to React with JSX-compliant syntax  
 
 ### **✔️ ProductListing Component**
 - Renders the entire product grid  
 - Dynamically generates items using `map()`  
-- Receives product data via props
+- Receives product data via props  
 
 ### **✔️ ProductItem Component**
 - Represents a single product card  
 - Displays name, category, price, and image  
 - Uses props for reusable rendering  
-- Images loaded with `require()` to work in React
+- Images loaded with `require()` to work in React  
 
 ### **✔️ Footer Component**
 - Fully migrated from HTML/CSS  
-- Includes informational and social links
+- Includes informational and social links  
 
 ### **✔️ JSON-Driven Data**
-Product details (name, category, price, images) are loaded from `products.json` and passed throughout the component hierarchy.
+- Product details (name, category, price, images) are loaded from `products.json`  
+- Passed through the component hierarchy for rendering  
+
+---
+
+## 🎨 Why This Project Matters
+
+This build demonstrates both **front-end development skills** and **product design sensibility**.
+
+### **Front-End Skills**
+- React component architecture  
+- JSX and modular UI structure  
+- Dynamic rendering from structured data  
+- Asset management in React  
+- Clean, maintainable code patterns  
+
+### **Product Design / UI Thinking**
+- Converting static layouts into reusable design components  
+- Information hierarchy (navigation → product grid → footer)  
+- Consistent spacing, patterns, and visual rhythm  
+- Foundation for multi-page user flows  
 
 ---
 
 ## 📁 Project Structure
+src/
+│── App.js
+│── App.css
+│── products.json
+│── images/
+│── Header.js
+│── ProductListing.js
+│── ProductItem.js
+└── Footer.js
 
+## 🔜 Roadmap (Future Enhancements)
+
+- Product Detail pages (`/product/:id`)  
+- React Router navigation  
+- Shopping cart with state management  
+- Global context store  
+- Microinteractions and animations  
+- Mobile-first refinement  
