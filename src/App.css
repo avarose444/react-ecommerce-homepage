@@ -538,6 +538,11 @@ form span {
   font-weight: 300;
 }
 
+.empty-cart-message {
+  width: 100%; 
+  text-align: center;
+}
+
 button[class*=btn] {
   width: 30px;
   height: 30px;
@@ -705,7 +710,7 @@ input:focus {
 .product-detail .form input {
   padding: 0.8rem;
   text-align: center;
-  width: 3.5rem;
+  width: 5.5rem;
   margin-right: 2rem;
 }
 
@@ -731,6 +736,20 @@ input:focus {
   .product-detail .details {
     gap: 3rem;
   }
+}
+
+.addCart {
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.addCart:hover {
+  background-color: #222; /* darker */
+  color: white;
+}
+
+.addCart:active {
+  transform: scale(0.97);
 }
 
 @media only screen and (max-width: 650px) {

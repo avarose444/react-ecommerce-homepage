@@ -1,8 +1,8 @@
 import './App.css';
 import ProductItem from './ProductItem';
 
-function ProductListing({products}) { //prop is basically a parameter
-return (
+function ProductListing({ products }) {
+  return (
     <section className="section new-arrival">
       <div className="title">
         <h1>OUR SELECTION</h1>
@@ -10,13 +10,19 @@ return (
       </div>
 
       <div className="product-center">
-
-        {products.map((productItem, index) => (
-<ProductItem name={productItem.name} category={productItem.category} imageUrl={`./${productItem.thumbnail_image}`} price={productItem.price} />
-))}
+        {products.map((productItem) => (
+          <ProductItem
+            key={productItem.id}
+            id={productItem.id}                     
+            name={productItem.name}
+            category={productItem.category}
+            imageUrl={`./${productItem.thumbnail_image}`}
+            price={productItem.price}
+          />
+        ))}
       </div>
     </section>
-);
+  );
 }
-export default ProductListing;
 
+export default ProductListing;

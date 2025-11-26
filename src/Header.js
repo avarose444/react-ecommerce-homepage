@@ -1,8 +1,13 @@
-import './App.css';
+import "./App.css";
+import { Link } from "react-router-dom";
+
 function Header() {
-    return (
+  return (
     <header className="header" id="header">
-         <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"/>
+      <link
+        rel="stylesheet"
+        href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      />
       <div className="top-nav">
         <div className="container d-flex">
           <p>Order Online or Call Us: (001) 222-5555</p>
@@ -13,42 +18,56 @@ function Header() {
           </ul>
         </div>
       </div>
+
       <div className="navigation">
         <div className="nav-center container d-flex">
-        <a href="index.html" className="logo"><h1>Greenthread</h1></a>
+          <Link to="/" className="logo">
+            <h1>Greenthread</h1>
+          </Link>
 
           <ul className="nav-list d-flex">
             <li className="nav-item">
-              <a href="index.html" className="nav-link">Home</a>
+              <Link to="/" className="nav-link">
+                Home
+              </Link>
             </li>
             <li className="nav-item">
-              <a href="product.html" className="nav-link">Shop</a>
+              <a href="product.html" className="nav-link">
+                Shop
+              </a>
             </li>
             <li className="nav-item">
-            <a href="#terms" className="nav-link">Terms</a>
+              <a href="#terms" className="nav-link">
+                Terms
+              </a>
             </li>
             <li className="nav-item">
-              <a href="#about" className="nav-link">About</a>
+              <a href="#about" className="nav-link">
+                About
+              </a>
             </li>
             <li className="nav-item">
-              <a href="#contact" className="nav-link">Contact</a>
+              <a href="#contact" className="nav-link">
+                Contact
+              </a>
             </li>
+
             <li className="icons d-flex">
-            <a href="login.html" className="icon">
-              <i className="bx bx-user"></i>
-            </a>
-            <div className="icon">
-              <i className="bx bx-search"></i>
-            </div>
-            <div className="icon">
-              <i className="bx bx-heart"></i>
-              <span className="d-flex">0</span>
-            </div>
-            <a href="cart.html" className="icon">
-              <i className="bx bx-cart"></i>
-              <span className="d-flex">0</span>
-            </a>
-          </li>
+              <a href="login.html" className="icon">
+                <i className="bx bx-user"></i>
+              </a>
+              <div className="icon">
+                <i className="bx bx-search"></i>
+              </div>
+              <div className="icon">
+                <i className="bx bx-heart"></i>
+                <span className="d-flex">0</span>
+              </div>
+              <a href="/cart" className="icon">
+                <i className="bx bx-cart"></i>
+                <span className="d-flex">0</span>
+              </a>
+            </li>
           </ul>
 
           <div className="icons d-flex">
@@ -62,10 +81,10 @@ function Header() {
               <i className="bx bx-heart"></i>
               <span className="d-flex">0</span>
             </div>
-            <a href="cart.html" className="icon">
+            <Link to="/cart" className="icon">
               <i className="bx bx-cart"></i>
               <span className="d-flex">0</span>
-            </a>
+            </Link>
           </div>
 
           <div className="hamburger">
@@ -73,6 +92,7 @@ function Header() {
           </div>
         </div>
       </div>
-    </header>);
+    </header>
+  );
 }
 export default Header;
